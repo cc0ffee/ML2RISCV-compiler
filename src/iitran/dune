@@ -1,0 +1,5 @@
+(library
+  (name iITRAN)
+  (modules iit_ast iit_tokens iit_lexer iit_parser iit_print iit_typecheck iITRAN)
+  (libraries varmap)
+)

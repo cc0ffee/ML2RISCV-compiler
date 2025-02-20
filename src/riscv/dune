@@ -1,0 +1,4 @@
+(library
+  (name riscv)
+  (libraries config unix varmap)
+)

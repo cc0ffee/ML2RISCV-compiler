@@ -1,0 +1,15 @@
+(ocamllex ml_lexer)
+
+(menhir
+  (modules ml_tokens)
+  (flags --only-tokens))
+
+(menhir
+  (modules ml_tokens ml_parser)
+  (merge_into ml_parser)
+  (flags --external-tokens Ml_tokens))
+
+(library
+  (name ml)
+  (wrapped false)
+  (libraries unix varmap graph config))

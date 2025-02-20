@@ -1,0 +1,15 @@
+(ocamllex llvm_lexer)
+
+(menhir
+  (modules llvm_tokens)
+  (flags --only-tokens))
+
+(menhir
+  (modules llvm_tokens llvm_parser)
+  (merge_into llvm_parser)
+  (flags --external-tokens Llvm_tokens))
+
+(library
+  (name llvm)
+  (wrapped false)
+  (libraries unix varmap graph config))

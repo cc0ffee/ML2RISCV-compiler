@@ -1,0 +1,10 @@
+(library
+  (name c_ast)
+  (modules c_ast)
+)
+
+(library
+ (name c)
+ (libraries c_ast FrontC varmap)
+ (modules c c_desugar c_typecheck)
+ )
