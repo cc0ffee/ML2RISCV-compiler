@@ -1,6 +1,6 @@
 # ML to RISC-V Compiler
 
-ML (and C) to RISC-V Compiler written in Ocaml.
+ML (and C) to RISC-V Compiler written in Ocaml, using LLVM as the IR.<br>This was a project for Compiler Construction course.
 
 ## Building from Source
 
@@ -19,9 +19,9 @@ make all
 
 ## Usage
 
-### Basic Compilation
+### Compilation
 
-To compile an ML source file:
+To compile an ML or C source file:
 ```bash
-./main [c-or-ml-filepath]
+./main [ml-or-c-filepath]
 ```
