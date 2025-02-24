@@ -25,3 +25,8 @@ To compile an ML or C source file:
 ```bash
 ./main [ml-or-c-filepath]
 ```
+
+### Testing
+
+Within the repository includes two folders c-tests and ml-tests to be used as example compilations. 
+Use [Venus Simulator](https://venus.kvakil.me/) or a local environment to run the RISC-V output. The result will be recorded in the `a0` register.
